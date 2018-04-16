@@ -17,16 +17,25 @@ if(nivel_jogo == 3){//3 dificil -> 30 segs
 }
 
 document.getElementById('cronometro').innerHTML = tempo_segundo;//inserindo segundos no span
-var qtde_baloes = 10;//quantidade de baloes
+var qtde_baloes = 10;
+//quantidade de baloes 
+
 
 cria_baloes(qtde_baloes);
+
+// imprimir qtde de baloes inteiros
+
+document.getElementById('baloes_inteiros').innerHTML = qtde_baloes;
+document.getElementById('baloes_estourados').innerHTML = 0;
 }
+
+
 
 function cria_baloes(qtde_baloes){
 for(var i = 1; i<= qtde_baloes; i++){
     var balao = document.createElement("img");
     balao.src = "imagens/balao_azul_pequeno.png";
-
+	balao.style.margin = '10px';
     document.getElementById('cenario').appendChild(balao);
         }
 }
