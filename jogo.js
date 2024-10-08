@@ -9,11 +9,11 @@ if(nivel_jogo == 1){//1 facil -> 120 segs
 }
 
 if(nivel_jogo == 2){//2 facil -> 60 segs
-    tempo_segundo = 60
+    tempo_segundo = 80
 }
 
 if(nivel_jogo == 3){//3 dificil -> 30 segs
-    tempo_segundo = 30
+    tempo_segundo = 40
 }
 
 document.getElementById('cronometro').innerHTML = tempo_segundo;//inserindo segundos no span
